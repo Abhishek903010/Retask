@@ -1,0 +1,30 @@
+
+
+.example-card {
+    max-width: 400px;
+    
+
+  }
+  
+  .example-header-image {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn-yx0tCPlvOPJ9fcKTuBPkyY6tI6AUNclrg&usqp=CAU');
+    background-size: cover;
+  }
+  ul{
+    display: inline-block;
+    clear: both;
+    float: left;
+  }
+  span{
+    position:fixed;
+    top: 150px;
+    left: 600px;
+    background-color: #fff;
+  }
+   button{
+     margin: 5PX;
+   }
+   .btCo{
+     background-color:rgb(203, 17, 17);
+   }
+ 

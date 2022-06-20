@@ -1,0 +1,38 @@
+
+  
+  <ul *ngFor="let a of arr2">
+    <mat-card class="example-card" >
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{a.name}}</mat-card-title>
+        <mat-card-subtitle>Actor</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="https://i2.wp.com/MynockManor.com/wp-content/uploads/2018/04/Darth-Vader-Annual-2.jpg"
+        alt="Photo of a Shiba Inu">
+      <mat-card-content>
+  
+  
+        <table class="table table-borderless">
+          <tr>
+            <td>Height</td>
+            <td>{{a.height}}</td>
+          </tr>
+          <tr>
+            <td>Mass</td>
+            <td>{{a.mass}}</td>
+          </tr>
+        </table>
+        {{obj$ |async}}
+      </mat-card-content>
+      <mat-card-actions>
+        <button (click)="moreFun(a)" routerLink="moreinfo" class="btn btn-primary" data-bs-toggle="button"
+          autocomplete="off" aria-pressed="true">More Info</button>
+          <button style="background-color: red;" (click)="del(a.name)"type="button" class="btn btn-primary" data-bs-toggle="button"
+          autocomplete="off" aria-pressed="true">Delete</button>
+      </mat-card-actions>
+    </mat-card>
+  </ul>
+  <span>
+    <router-outlet></router-outlet>
+  </span>
+ 
