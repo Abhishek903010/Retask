@@ -1,9 +1,11 @@
 
-{{more.films}}
+{{more.vehicles}}
+{{more.vehicles}}
 <table>
  
-    <tr (click)=" filmFetch(more.films)" style="background-color: rgb(42, 196, 163);"><button routerLink="/films">Films</button> </tr>
-    <tr (click)="vehicleFetch(more.eye_color)" style="background-color: rgb(42, 196, 163);"><button routerLink="vehicles">vehicles</button></tr>
-    <tr (click)="starshipFetch(more.starships)" style="background-color: rgb(42, 196, 163);"><button routerLink="starships">starships</button></tr>
+    <tr  style="background-color: rgb(42, 196, 163);"><button (click)="filmFetch(more.films)" routerLink="/films">Films</button> </tr>
+    <tr  style="background-color: rgb(42, 196, 163);"><button (click)="vehicleFetch(more.vehicles)" routerLink="/vehicles">vehicles</button></tr>
+    <tr  style="background-color: rgb(42, 196, 163);"><button (click)="starshipFetch(more.starships)" routerLink="/starships">starships</button></tr>
   
 </table>
+<button (click)="myfun(more.films)">click</button>

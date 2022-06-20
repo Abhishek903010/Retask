@@ -18,14 +18,17 @@ m:any;
     })
   
   }
+  myfun(l:any){
+    console.log(l)
+  }
   filmFetch(l: any) {
-    this.m=l
+   
    this.ser.filmsFun(l)
   }
   vehicleFetch(l: any) {
   
 console.log(l);
-      // this.ser.vehiclesFun(l);
+      this.ser.vehiclesFun(l);
     
 
   }
